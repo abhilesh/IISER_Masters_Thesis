@@ -1,0 +1,68 @@
+%% Abhilesh Dhawanjewar
+%% 5th year Master's Thesis
+%% Indian Institute of Science Education and Reasearch, Pune
+
+\documentclass[a4paper. 12pt, twoside]{report}
+
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage[compact]{titlesec}
+\usepackage{siunitx}
+\usepackage{amssymb,amstext,amsmath,hyperref,graphics}
+\usepackage{mathtools}
+\usepackage[font = footnotesize, labelfont = bf]{caption}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage[round, comma, author year, sort]{natbib}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\hypersetup{
+	colorlinks,
+	linkcolor=black,
+	citecolor=blue,
+	urlcolor=black}
+    \ifx\pdfoutput\undefined
+    \usepackage{graphicx}
+    \else
+    \usepackage[pdftex]{graphicx}
+    \fi
+\usepackage{epstopdf}
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{longtable}
+\renewcommand\bibname{References}
+
+\setmainfont{Arial}
+\linespread{1.5}
+\setcounter{secnumdepth}{4}
+
+\pagenumbering{roman}
+
+\begin{document}
+
+\include{./title/title}
+\include{./certificate/certificate}
+\include{./declaration/declaration}
+\include{./acknowledgements/acknowledgements}
+\include{./abstract/abstract}
+
+\listoffigures
+\listoftables
+\tableofcontents
+
+%\pagenumbering{arabic}
+\include{./introduction/introduction}
+\include{./methods/methods}
+\include{./results/results}
+\include{./discussions/discussions}
+
+\addcontentsline{toc}{chapter}{\numberline{}References} 
+\include{./biblio/biblio}
+
+\appendix
+\include{./appendix1/appendix1}
+
+\end{document}

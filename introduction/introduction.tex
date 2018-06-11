@@ -1,0 +1,164 @@
+% -------------------------------------------------------------------------------------------------
+% ------------------------------------------ INTRODUCTION -----------------------------------------
+% -------------------------------------------------------------------------------------------------
+\chapter{Introduction}
+\label{introchap}
+
+\pagestyle{fancy}
+\pagenumbering{arabic}
+
+\fancypagestyle{plain}{
+\fancyhf{} 
+\fancyfoot[RO, LE]{\thepage} 
+\renewcommand{\headrulewidth}{0pt}}
+
+\fancyhf{}
+\fancyhead[RO, LE]{Introduction}
+\fancyfoot[RO,LE]{\thepage}
+
+\setcounter{page}{1}
+
+\renewcommand{\epigraphflush}{center}
+\renewcommand{\textflush}{flushepinormal}
+\setlength{\epigraphwidth}{0.8\textwidth}
+\setlength{\epigraphrule}{0pt}
+\setlength{\beforeepigraphskip}{0.8 cm}
+\setlength{\afterepigraphskip}{0.8 cm}
+
+\makeatletter
+\renewcommand{\@epitext}[1]{%
+  \begin{minipage}{\epigraphwidth}\begin{\textflush} \hspace*{20pt}#1\\
+    \ifdim\epigraphrule>\z@ \@epirule \else \vspace*{-.5\baselineskip} \fi
+  \end{\textflush}\end{minipage}}
+\makeatother
+
+\epigraph{\textit{"You see, proteins, as I probably needn't tell you, are immensely complicated groupings of amino acids and certain other specialized compounds, arranged in intricate three-dimensional patterns that are as unstable as sunbeams on a cloudy
+day. It is this instability that is life, since it is forever changing it's position in
+an effort to maintain it's identity in the manner of a long rod balanced on an
+acrobat's nose."}}{ - Isaac Asimov, Pebble in the Sky}
+
+\section{Protein Interfaces}
+Proteins are generally referred to as Biology's Workforce, as they perform nearly every function required for life. Proteins are polypeptide chains, consisting of amino acids linked in a linear chain. Amino acids, the building blocks of proteins consist of an amino group, a carboxyl group and an amino acid specific side chain. The properties of different amino acids determine the kinds of interatomic interactions between them. To carry out its function, a protein needs to be folded in a specific three dimensional shape. The 3D structure of a protein is largely dependent on its amino acid sequence, as particular sequences of amino acids give rise to linear chains and other compact domains with specific structures.
+\par 
+Most cellular processes require proteins to often work in concert, forming complexes of varying shapes and sizes, transporting other proteins, modifying other proteins etc. Unsurprisingly, Protein - Protein Interactions underlie a range of cellular processes such as mediating signal transduction, translating energy to physical motion, regulating cellular metabolism, immunological response and enzymatic inhibition, hence playing a critical role in many biological pathways \citep{Braun2012}. Some parts of the protein would need to interact with other proteins and hence would form the interface. Proteins inside a cell are diffusing randomly and colliding with one another all the time, but only a small fractions of these collisions result in biologically meaningful complexes and some chemistry (active - such as enzymatic activity, or passive - such as protein transport).Identifying the general rules behind protein-protein interactions is hence necessary for understanding the full repertoire of cellular pathways. The prediction of protein-protein interfaces can lead to advances in understanding disease pathways which involve aberrant protein-protein interactions such as cancer \citep{Wong2003} and protein aggregate formations such as the Alzheimer's disease, Huntington's disease, Parkinson's disease, Creutzfeldt-Jakob disease and other Prion disorders \citep{Kaytor1999} .
+
+\subsection{General Properties of Protein-Protein Interfaces}
+\label{interface_prop}
+\par
+Protein-Protein interactions have been broadly categorized as homo- or hetero-oligomeric; obligate or non-obligate and transient or permanent \citep{Nooren2003}. If  identical proteins come together to form a complex, the resulting complex is termed as a homo-oligomer. Accordingly, assemblies of proteins with different subunits are termed as hetero-oligomeric. If the individual subunits of a complex can exist in solution independently, then the interaction between the subunits is a non-obligate one; in contrast, if the structure and function of the subunits is lost upon separation, it is an obligate interaction. Based on the lifetime of the interactions, protein associations are classified as transient (short-term interactions) or permanent (long-term interactions). These six different types of protein complexes differ in their amino-acid content and residue residue contact preferences \citep{Ofran2003}. Most protein complexes are a combination of these categories. The shape of a protein-protein interface (Figure \ref{interface}) has been observed to be planar, globular and protruding, probably due to the symmetry involved in the associations \citep{Argos1988, Jones1996}. 
+
+\begin{figure}[t!]
+	\centering
+	\includegraphics[scale = 0.4]{./introduction/protein_interface.eps}
+	\vspace{-10pt}
+	\caption[Protein Interface]{The interface between subunits of an RNA binding protein (PDB: 3S6E chains A \& B) is shown in surface representation. The rest of the protein complex is in ribbon representation (Subunit A is coloured brown and Subunit B is coloured blue). This figure was rendered using Chimera \citep{Pettersen2004}.}
+	\label{interface}
+	\vspace{-12pt}
+\end{figure}
+
+\par
+Earlier studies concerning protein folding ascribed hydrophobic effect as the major driving force behind protein folding \citep{Dill1990}. The folding of polypeptide chains buries the non-polar residues in the protein, minimising the number of thermodynamically unfavourable solute-solvent interactions. This burying of the hydrophobic residues resulting in the reduction of free energy also occurs during the aggregation of protein subunits and hence the hydrophobic effect is fundamental to the stabilisation of protein association as well \citep{Chothia1975}. However, contradictions between the measured values for enthalpy and entropy and the expected values for hydrophobic interactions have been noted for several protein association processes suggesting that it is not possible to account for the stability of protein associations on the basis of hydrophobic interactions alone \citep{Ross1981}. Analyses of multimeric protein structures in contemporary times have lead to the inclusion of electrostatic interactions (both long range coulombic interactions and short range hydrogen bonds and salt bridges) \citep{Xu1997, Sheinerman2000}, van der Waals forces, and hydrophobicity as major driving forces governing the association of proteins. Other forces such as aromatic stacking \citep{Burley1985}, disulfide bonds, and cation-$\displaystyle{\pi}$ interactions \citep{Crowley2005} also contribute to varying degrees.
+
+\subsection{The Protein Binding Phenomenon}
+The subunits in a protein complex are synthesised as separate proteins which then come together and bind in a particular orientation to give rise to the protein complex. The surfaces of the subunits in the monomeric state are completely hydrated. The hydrophilic amino acids residues on the protein surface make stabilising polar contacts and hydrogen bonds with the molecules of the solvent. Hence, for binding to take place between the subunits of a protein complex, the intermolecular interactions between the subunits must be more stabilising than the destabilisation caused by the desolvation of the subunit surfaces. The binding of a protein can be described as a two-step reaction:
+
+\begingroup
+\large
+\begin{equation}
+A\;+\;B\; \xrightleftharpoons \; A:B \; \xrightleftharpoons \; AB
+\end{equation}
+\endgroup
+
+where $A$ and $B$ are the free proteins, $A:B$ is the intermediate complex (also known as the encounter complex) and $AB$ is the bound protein complex \citep{Selzer2001}. The two subunits diffuse randomly in solution, their motions dictated by the dynamics of Brownian motion, until they reach an area, known as the \textit{steering region}, the region where both the subunits are close enough to experience mutual electrostatic attraction. These aforementioned long-range electrostatic interactions cause the subunits to collide and form an encounter complex. At this stage, the short range electrostatic forces start acting at the interface of two proteins and contribute to the stabilisation of the encounter complex. Partial desolvation of the interface also contributes to a favourable entropy adding to the stability of the encounter complex \citep{Ross1981}. The electrostatic attractions between the two subunits hold the subunits associated to each other for a longer time, allowing them to achieve a proper orientation for binding \citep{Sheinerman2000}.
+
+\par
+The interaction regions on proteins also contain binding motifs called \textit{anchor residues}, that help stabilise protein complexes by reducing the kinetic costs associated with structural rearrangements at the protein binding sites \citep{Rajamani2004}. Molecular Dynamics simulations suggest that the side chains of these anchor residues frequently visit the conformations that are observed in the final bound state. They are also part of the complementary binding pockets often found on protein interfaces. Along with providing molecular recognition, these residues stabilise the encounter complexes that are in a near-native conformation. Further rearrangements in the side chains of amino acid residues, desolvation of the interface and the formation of non-covalent bonds lead to the final association in the stable complex. As a part of these events, certain \textit{latch residues} present on the protein interface lock the subunits into the final stable conformation \citep{Rajamani2004}.
+
+\subsection{Experimental Determination of Protein Interfaces}
+\par
+Protein-protein interfaces can be experimentally determined using different methods. Some of the most commonly used methods are:
+\begin{itemize}
+\item \underline{X-ray crystallography}: The three-dimensional coordinates of the atoms of a protein are estimated by analysing the diffracted angles and intensities of X-ray beams shone at a crystallised protein. Inherently, this method is unsuitable for determining the structures of proteins that are difficult to crystallize. This method also captures only a screenshot of the dynamic positions of the atoms of the protein. Despite these limitations, X-ray crystallography methods are the most popular to determine protein structure. Around 89 \% of structures in the PDB are determined using X-ray Crystallography. However, only about 45 \% of these structures depict protein-protein interactions.
+\item \underline{Nuclear Magnetic Resonance (NMR) spectroscopy}: Determination of molecular structures using NMR spectroscopy measures the chemical shifts in the nuclei of the atoms in the protein, which are dependent on nearby atoms and their distances from each other, when the protein is placed in a strong magnetic field. This generates a list of constraints which can then be used to build a model of the protein describing the location of each atom. Since NMR spectroscopy is done on proteins in solutions, several models of the protein can be built, which can provide insight into the dynamics of the protein, unlike X-ray crystallography. A major limitation for this method is that it can only be used to determine the structure of smaller protein complexes. Currently, around 10 \% of protein structures submitted in the PDB were solved using NMR spectroscopy. However, the number of interactions elucidated by NMR is much smaller.
+\item \underline{Electron Microscopy} : Using a focused beam of accelerated electrons as the illumination source, electron microscopy is used to create images of large macromolecular structures. Proteins can be crystallized and then imaged by electron microscopy in a method similar to the one used in X-ray crystallographic methods of protein structure determination. Several images, providing different views may be taken for some symmetrical protein molecules. These images are then analysed and combined together to produce a three-dimensional map of the proteins atoms. This method is useful for producing low resolution maps of complex shapes but often cannot resolve the positions of individual amino acid residues.
+\item \underline{Chemical cross-linking followed by mass spectrometry}: In this method, the protein complex is purified and tagged, its subunits are cross-linked by subjecting them to cross-linking reactions and then identified using mass spectrometry. This method is useful for producing low resolution structures of transient proteins. The cross-linking experiments are subject to several conditions and hence are error-prone processes. 
+\end{itemize}
+
+\par
+Another set of experimental methods to detect protein interface residues exist such as the yeast two-hybrid method, which involves the construction of two plasmids and transforming them into a yeast strain. One of the plasmids encodes protein $X$ with the DNA-binding domain of a transcription factor, while the other plasmid encodes the second protein $Y$ in-frame with a transcription activation domain. Interactions between proteins $X$ and $Y$ reconstitutes an active transcription factor which binds upstream of the reporter genes and enables their expression \citep{Causier2002}. However, this method generates a lot of false positives due to non-specific interactions and often needs confirmations from other methods to reduce the false positive rates.
+\par
+Mutagenesis experiments also aid in the detection of the protein interface residues. Amino acid residues in the protein subunits are systematically mutated and their effect on protein binding is studied with the use of protein expression assays. These experimental methods for the detection of protein-protein interfaces are labor-extensive and expensive, in addition to their general limitations. Hence, there is a need to develop fast and cost-effective computational methods that will enable us to generalize the principles of protein-protein associations and study protein interactions in greater detail.
+
+\subsection{Computational Methods for Studying Protein-Protein Interactions}
+Observations by Christian Anfinsen \citep{Anfinsen1973} regarding the spontaneous refolding of an unfolded protein chain into its biologically active three-dimensional conformation led to the postulation of the Thermodynamic Hypothesis of Protein Folding. The Thermodynamic Hypothesis states that a native protein folds into a three-dimensional system in equilibrium, in which the state of the whole protein-solvent system corresponds to the global minimum of free energy \citep{xu2010computational}. Based on this hypothesis, several computational studies concerning protein folding, protein-protein interactions and protein design depend on the derivation of a potential function to calculate the effective energy of a protein system. By matching the results of quantum mechanical calculations to the empirically determined thermodynamic properties of small molecules, parameters were derived for the development of potential functions \citep{Sippl1993}. These potential functions are then applied to macroscopic scales based on the assumption that properties of macroscopic states can be approximated by considering them as combinations of a large number of microscopic states. The potential functions developed through this inductive approach are termed as 'physics-based' or 'physical' potential functions. These physics-based potentials are based on atomic level models and hence are computationally very intensive.
+
+\par
+Another set of potential functions are derived by extracting the parameters from a database of known structures \citep{Sippl1993}. These types of potentials follow the deductive approach and implicitly incorporate a variety of interactions. Therefore, these potentials do not represent true binding energies and hence are termed as 'knowledge-based' or 'pseudo-energy' potential functions. Though these methods do not reflect the true energies, they are algorithmically less intensive and have performed successfully. These potentials can be further divided into two cases. In one set, the knowledge-based potentials are derived by comparing the relative frequencies of interacting pairs in the database with that in a reference state \citep{Miyazawa1996}. In the other set, these potential functions are derived by optimisation with respect to certain criteria, e.g, by maximising the energy gap between the native conformations and the non-native conformations \citep{Goldstein1992}.
+
+\section{Knowledge-based Statistical Potentials}
+Knowledge-based statistical potentials are based on the \textit{Boltzmann assumption}, that states frequently observed structural features correspond to low-energy states. Tanaka and Scheraga were the first to employ the above assumption to estimate pairwise amino acid interaction potentials by converting the observed frequencies of amino acid pairs into effective free energies \citep{Tanaka1976}. Since then many variants of pairwise amino acid potentials have extended this idea \citep{Miyazawa1996, Sippl1993}.
+
+The general definition of a database-driven statistical potential as in \citep{Sippl1990} is:
+\begin{equation}
+E(r) = -kT\ln[f(r)]
+\end{equation}
+\begin{eqnarray}
+\mathrm{where,} \nonumber \\
+r &=& \mathrm{a\;protein\;structural\;parameter\;(eg.\;interatomic\;distance)} \nonumber \\
+E(r) &=& \mathrm{the\;energy\;at\;}r \nonumber \\
+k &=& \mathrm{\textit{Boltzmann's}\;constant} \nonumber \\
+T &=& \mathrm{absolute\;temperature} \nonumber \\
+\nonumber
+\end{eqnarray}
+
+Apart from $r$, the potential for a particular residue pair also depends upon the nature of atoms involved in the interaction and $s$, the separation of the respective amino acids in the amino acid sequence. At $s\;\geq\;10$, the atoms can be considered as free particles and then by the Boltzmann approximation :
+
+\begin{equation}
+E^{obs}(r) = -kTln[f^{obs}(r)]
+\end{equation}
+
+where, $f^{obs}(r)$ is approximated by the relative frequencies observed in the database.
+
+\par
+Since these general potentials incorporate all interaction types between the atoms (electrostatic interactions, hydrogen bonds, van der Waals etc.) and also the influence of the surrounding medium on the interactions, they contain redundant information. In order to isolate the specific information in different potentials, we need to strip the redundant information from the general potentials. This redundant information can be defined in terms of a reference state. A suitable reference for intramolecular protein interactions is \citep{Sippl1990}:
+\begin{eqnarray}
+E^{s}(r) &=& -kT\ln[f^{s}(r)] \\
+\mathrm{where,} \nonumber \\
+f^{s}(r) &=& \sum\limits{ab}f^{obs}(r)
+\end{eqnarray}
+which is averaged over all atom and residue types. Subtracting this redundant term from the general potentials, we get:
+\begin{equation}
+\Delta E^{obs}(r) = E^{obs}(r) - E^{s}(r) = -kT \left[ \dfrac{f^{obs}(r)}{f^{s}(r)} \right] 
+\end{equation}
+The term $f^{obs}(r)$ comes from the database, whereas the term $f^{s}(r)$ is calculated as defined in the reference state. Hence, this potentials have a large dependence on the choice of reference state used.
+
+\section{Previous Related Work}
+Several researchers have attempted the prediction of protein-protein interactions using knowledge-based potentials in the past, and some of these methods have also been able  to garner experimental evidence for their predictions. 
+\par
+Yasuda et. al., while working on the extracellular activation of tryptase $\epsilon$ used computational docking approaches to understand how tryptase $\epsilon$ selectively recognizes the activation sequence in pro-uPA. A lysine residue on loop A of tryptase $\epsilon$ (K20A) was predicted to be involved in recognizing the processing site of pro-uPA. Consistent with this prediction, they were able to show that K20A tryptase $\epsilon$ mutants failed to convert pro-uPA to uPA \citep{Yasuda2005}.
+\par
+The PrePPI web server (\url{https://bhapp.c2b2.columbia.edu/PrePPI/}), set up by Honig lab at Columbia University, combines structural and non-structural cues in a bayesian framework to predict protein-protein interactions. The algorithm used in PrePPI generates structural representatives for two query protein sequences. Complexes formed by the structural neighbours of the representatives are then retrieved from the PDB to serve as interaction models. These interaction models are evaluated using five different scores, some of which are statistically derived. The researchers also tested nineteen PrePPI predictions of human interactions using Co-immunoprecipitation (Co-IP) experiments. Fifteen of these predictions were validated using the Co-IP experiments \citep{Zhang2012}.
+\par
+Another example where knowledge-based bioinformatic predictions were experimentally validated was the predictions of new substrates for Aurora A kinase. The predictions were made by analysing the available data on Aurora A kinase and their phosphorylation sites and then using distinct types of biological information to generate a ranked list of potentials Aurora A kinase substrates. These predictions were validated by using $in \; vitro$ kinase assays and mass spectrometry analyses \citep{Sardon2010}.
+
+\section{Classifier Methods}
+Diagnostic decision making is an important process involved in the prediction of protein-protein complexes. In order to determine the threshold parameters for diagnosis, we need statistical methods to gauge which of the thresholds gives the most accurate predictions. One such method is the use of Receiver - Operating Characteristic (ROC) curves, which ensures that the number of true cases predicted does not come at the cost of an unreasonable number of false positives \citep{Swets2000}.
+\par
+A classifier is a mapping that connects the instances to the predictions. Given a classifier and an instance, there are four possible outcomes. If the instance is positive and it is predicted as positive, it is termed \textit{true positive}; if predicted negative, it is termed as \textit{false negative}. If the instance is negative and it is predicted as positive, it is counted as a \textit{false positive}; if predicted negative, it is a \textit{true negative} \citep{Fawcett2004}. The two positive rate and the false positive rates of a classifier are defined below: \begin{eqnarray}
+True\;positive\;rate &\approx& \dfrac{Positives\;correctly\;classified}{Total\;positives} \\[12pt]
+False\;positive rate &\approx& \dfrac{Negatives\;incorrectly\;classified}{Total\;negatives}
+\end{eqnarray}
+The True Positive Rate (TPR) is also referred to as \textit{Sensitivity} and (1 - False Positive Rate) is also known as \textit{Specificity}.
+
+ROC curves are two-dimensional graphs in which FPR is plotted on the X-axis and TPR is plotted along the Y-axis. An ROC curve depicts the trade-off between the True Positives and the False Positives. Several points on the ROC curve are important. The point (0,0) never issues any false positives but it also does not return any true positives, whereas, the point (1,1) returns positives indiscriminately. The perfect classifier is represented by the point (0,1). At this point, all positives returned are True positives and none are False positives. Hence, the closer the ROC curve is to this point, the better the performance of the classifier. On the other hand, a random classifier lies on the $x = y$ line, as it is expected to return half the instances with positive predictions and the other half with negative predictions (Fig \ref{roc_ill}).
+	To compare between different classifiers, the ROC curve performances are often reduced to a single scalar value. The Area Under the ROC Curve (AUC) is one such metric which is used to compare classifiers. Since, the AUC is a portion of the unit square, it's value always lies between 0 and 1. The random classifier is represented by a diagonal passing through the points (0,0) and (1,1), which corresponds to an AUC of 0.5, hence any real world classifier should not have an AUC value of less than 0.5.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale =0.4]{./introduction/roc_depict.eps}
+	\caption[Demonstrative ROC curves]{Sample ROC curves to illustrate the performance of different classifiers. The green line represents a good performing classifier $(AUC \approx 0.9)$. The blue line represents a random classifier $(AUC \approx 0.5)$ whereas the red line corresponds to a bad classifier $(AUC \approx 0.3)$  }
+	\label{roc_ill}
+\end{figure}
+
+% -------------------------------------------------------------------------------------------------
+% ------------------------------------------ INTRODUCTION --------------------------------------------
+% -------------------------------------------------------------------------------------------------

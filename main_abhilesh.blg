@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main_abhilesh.aux
+A level-1 auxiliary file: ./title/title.aux
+A level-1 auxiliary file: ./certificate/certificate.aux
+A level-1 auxiliary file: ./declaration/declaration.aux
+A level-1 auxiliary file: ./acknowledgements/acknowledgements.aux
+A level-1 auxiliary file: ./abstract/abstract.aux
+A level-1 auxiliary file: ./introduction/introduction.aux
+A level-1 auxiliary file: ./methods/methods.aux
+A level-1 auxiliary file: ./results/results.aux
+A level-1 auxiliary file: ./discussions/discussions.aux
+A level-1 auxiliary file: ./biblio/biblio.aux
+The style file: kbib.bst
+A level-1 auxiliary file: ./appendix1/appendix1.aux
+Database file #1: ./biblio/thesisrefabhilesh.bib
+You've used 39 entries,
+            2773 wiz_defined-function locations,
+            989 strings with 14910 characters,
+and the built_in function-call counts, 20774 in all, are:
+= -- 2006
+> -- 1237
+< -- 22
++ -- 417
+- -- 378
+* -- 1836
+:= -- 3281
+add.period$ -- 192
+call.type$ -- 39
+change.case$ -- 242
+chr.to.int$ -- 39
+cite$ -- 78
+duplicate$ -- 787
+empty$ -- 1542
+format.name$ -- 447
+if$ -- 4282
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 38
+newline$ -- 277
+num.names$ -- 156
+pop$ -- 354
+preamble$ -- 1
+purify$ -- 204
+quote$ -- 0
+skip$ -- 625
+stack$ -- 0
+substring$ -- 980
+swap$ -- 40
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 424
+warning$ -- 0
+while$ -- 188
+width$ -- 0
+write$ -- 660

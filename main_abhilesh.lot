@@ -1,0 +1,9 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Parameters used for removing redundancy of the PDB dataset\relax }}{11}{table.2.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Complementarity between the different potentials at different rank cut-offs. The number of structures that were ranked 1 against their respective backgrounds for the two cases are given in the two columns.\relax }}{22}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Testing of side chain-side chain potential values for GLY-GLY pairs: Native confirmation scores were rank ordered against decoy conformation scores and the number of structures with native confirmations as best ranked was noted\relax }}{23}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces The predictions regarding the binding of Ral to GEF variants using the pairwise statistical potentials.\relax }}{26}{table.3.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

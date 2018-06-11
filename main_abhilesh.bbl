@@ -1,0 +1,341 @@
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Anfinsen(1973)]{Anfinsen1973}
+Anfinsen, C~B.
+\newblock {Principles that govern the folding of protein chains.}
+\newblock \emph{Science (New York, N.Y.)}, 181\penalty0 (4096):\penalty0
+  223--230, 1973.
+\newblock ISSN 0036-8075.
+\newblock \doi{10.1126/science.181.4096.223}.
+
+\bibitem[Argos(1988)]{Argos1988}
+Argos, Patrick.
+\newblock {An investigation of protein subunit and domain interfaces}.
+\newblock \emph{Protein Engineering, Design and Selection}, 2\penalty0
+  (2):\penalty0 101--113, 1988.
+\newblock ISSN 17410126.
+\newblock \doi{10.1093/protein/2.2.101}.
+
+\bibitem[Berman et~al.(2000)Berman, Westbrook, Feng, Gilliland, Bhat, Weissig,
+  Shindyalov, and Bourne]{Berman2000}
+Berman, H~M; Westbrook, J; Feng, Z; Gilliland, G; Bhat, T~N; Weissig, H;
+  Shindyalov, I~N, and Bourne, P~E.
+\newblock {The Protein Data Bank.}
+\newblock \emph{Nucleic acids research}, 28\penalty0 (1):\penalty0 235--242,
+  2000.
+\newblock ISSN 0305-1048.
+\newblock \doi{10.1093/nar/28.1.235}.
+
+\bibitem[Braun and Gingras(2012)]{Braun2012}
+Braun, Pascal and Gingras, Anne~Claude.
+\newblock {History of protein-protein interactions: From egg-white to complex
+  networks}.
+\newblock \emph{Proteomics}, 12:\penalty0 1478--1498, 2012.
+\newblock ISSN 16159853.
+\newblock \doi{10.1002/pmic.201100563}.
+
+\bibitem[Burley and Petsko(1985)]{Burley1985}
+Burley, SK and Petsko, GA.
+\newblock Aromatic-aromatic interaction: a mechanism of protein structure
+  stabilization.
+\newblock \emph{Science}, 229\penalty0 (4708):\penalty0 23--28, 1985.
+
+\bibitem[Causier and Davies(2002)]{Causier2002}
+Causier, Barry and Davies, Brendan.
+\newblock {Analysing protein-protein interactions with the yeast two-hybrid
+  system}.
+\newblock \emph{Plant Molecular Biology}, 50\penalty0 (1989):\penalty0
+  855--870, 2002.
+
+\bibitem[Chothia and Janin(1975)]{Chothia1975}
+Chothia, C and Janin, J.
+\newblock {Principles of protein-protein recognition.}
+\newblock \emph{Nature}, 256:\penalty0 705--8, 1975.
+\newblock ISSN 0028-0836.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/1153006}.
+
+\bibitem[Crowley and Golovin(2005)]{Crowley2005}
+Crowley, Peter~B and Golovin, Adel.
+\newblock {Cation-pi interactions in protein-protein interfaces.}
+\newblock \emph{Proteins}, 59\penalty0 (February):\penalty0 231--239, 2005.
+\newblock ISSN 1097-0134.
+\newblock \doi{10.1002/prot.20417}.
+
+\bibitem[Davis et~al.(2006)Davis, Braberg, Shen, Pieper, Sali, and
+  Madhusudhan]{Davis2006}
+Davis, Fred~P; Braberg, Hannes; Shen, Min-Yi; Pieper, Ursula; Sali, Andrej, and
+  Madhusudhan, M~S.
+\newblock {Protein complex compositions predicted by structural similarity.}
+\newblock \emph{Nucleic acids research}, 34\penalty0 (10):\penalty0 2943--52,
+  January 2006.
+\newblock ISSN 1362-4962.
+\newblock \doi{10.1093/nar/gkl353}.
+\newblock URL
+  \url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1474056\&tool=pmcentrez\&rendertype=abstract}.
+
+\bibitem[Dill(1990)]{Dill1990}
+Dill, K~a.
+\newblock {Dominant forces in protein folding.}
+\newblock \emph{Biochemistry}, 29\penalty0 (31):\penalty0 7133--7155, 1990.
+\newblock ISSN 0006-2960.
+\newblock \doi{10.1021/bi00483a001}.
+
+\bibitem[Fawcett(2004)]{Fawcett2004}
+Fawcett, Tom.
+\newblock {ROC Graphs : Notes and Practical Considerations for Researchers}.
+\newblock \emph{ReCALL}, 31:\penalty0 1--38, 2004.
+\newblock ISSN 08997667.
+\newblock \doi{10.1.1.10.9777}.
+\newblock URL
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.10.9777\&amp;rep=rep1\&amp;type=pdf}.
+
+\bibitem[Glaser et~al.(2001)Glaser, Steinberg, Vakser, Ben-tal, and
+  E-mail]{Glaser2001}
+Glaser, Fabian; Steinberg, David~M; Vakser, Ilya~a; Ben-tal, Nir, and E-mail,
+  Israel.
+\newblock {Residue Frequencies and Pairing Preferences at Protein – Protein
+  Interfaces protein – protein interfaces of known high-resolu- residue –
+  residue contact preferences . The residue statistical strength of the data
+  set . Differences be- tween amino acid dist}.
+\newblock \emph{Interfaces}, 102\penalty0 (November 2000):\penalty0 89 --102,
+  2001.
+
+\bibitem[Goldstein et~al.(1992)Goldstein, Luthey-Schulten, and
+  Wolynes]{Goldstein1992}
+Goldstein, R~a; Luthey-Schulten, Z~a, and Wolynes, P~G.
+\newblock {Protein tertiary structure recognition using optimized Hamiltonians
+  with local interactions.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 89\penalty0 (October):\penalty0 9029--9033, 1992.
+\newblock ISSN 0027-8424.
+\newblock \doi{10.1073/pnas.89.19.9029}.
+
+\bibitem[Heyda et~al.(2010)Heyda, Mason, and Jungwirth]{Heyda2010}
+Heyda, Jan; Mason, Philip~E., and Jungwirth, Pavel.
+\newblock {Attractive interactions between side chains of histidine-histidine
+  and histidine-arginine-based cationic dipeptides in water}.
+\newblock \emph{Journal of Physical Chemistry B}, 114:\penalty0 8744--8749,
+  2010.
+\newblock ISSN 15206106.
+\newblock \doi{10.1021/jp101031v}.
+
+\bibitem[Janin(2002)]{Janin2002}
+Janin, Jo\"{e}l.
+\newblock {Welcome to CAPRI: A Critical Assessment of PRedicted Interactions}.
+\newblock \emph{Proteins: Structure, Function and Genetics}, 47\penalty0
+  (August 1999):\penalty0 257, 2002.
+\newblock ISSN 08873585.
+\newblock \doi{10.1002/prot.10111}.
+
+\bibitem[Jones and Thornton(1996)]{Jones1996}
+Jones, S and Thornton, J~M.
+\newblock {Principles of protein-protein interactions.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 93\penalty0 (January):\penalty0 13--20, 1996.
+\newblock ISSN 0027-8424.
+\newblock \doi{10.1073/pnas.93.1.13}.
+
+\bibitem[Kaytor and Warren(1999)]{Kaytor1999}
+Kaytor, Michael~D. and Warren, Stephen~T.
+\newblock {Aberrant protein deposition and neurological disease}, 1999.
+\newblock ISSN 00219258.
+
+\bibitem[Magalhaes et~al.(1994)Magalhaes, Maigret, Hoflack, Gomes, and
+  Scheraga]{Magalhaes1994}
+Magalhaes, a.; Maigret, B.; Hoflack, J.; Gomes, J.~N~F, and Scheraga, H.~a.
+\newblock {Contribution of unusual Arginine-Arginine short-range interactions
+  to stabilization and recognition in proteins}.
+\newblock \emph{Journal of Protein Chemistry}, 13\penalty0 (2):\penalty0
+  195--215, 1994.
+\newblock ISSN 02778033.
+\newblock \doi{10.1007/BF01891978}.
+
+\bibitem[Miyazawa and Jernigan(1996)]{Miyazawa1996}
+Miyazawa, Sanzo and Jernigan, Robert~L.
+\newblock {Residue-residue potentials with a favorable contact pair term and an
+  unfavorable high packing density term, for simulation and threading.}
+\newblock \emph{Journal of molecular biology}, 256:\penalty0 623--644, 1996.
+\newblock ISSN 0022-2836.
+\newblock \doi{10.1006/jmbi.1996.0114}.
+
+\bibitem[Nooren and Thornton(2003)]{Nooren2003}
+Nooren, I.~M~a and Thornton, Janet~M.
+\newblock {Diversity of protein-protein interactions}.
+\newblock \emph{EMBO Journal}, 22\penalty0 (14):\penalty0 3486--3492, 2003.
+\newblock ISSN 02614189.
+\newblock \doi{10.1093/emboj/cdg359}.
+
+\bibitem[Ofran and Rost(2003)]{Ofran2003}
+Ofran, Yanay and Rost, Burkhard.
+\newblock {Analysing six types of protein-protein interfaces}.
+\newblock \emph{Journal of Molecular Biology}, 325\penalty0 (02):\penalty0
+  377--387, 2003.
+\newblock ISSN 00222836.
+\newblock \doi{10.1016/S0022-2836(02)01223-8}.
+
+\bibitem[Pednekar et~al.(2009)Pednekar, Tendulkar, and Durani]{Pednekar2009}
+Pednekar, Deepa; Tendulkar, Abhijit, and Durani, Susheel.
+\newblock {Electrostatics-defying interaction between arginine termini as a
+  thermodynamic driving force in protein-protein interaction}.
+\newblock \emph{Proteins: Structure, Function and Bioinformatics}, 74:\penalty0
+  155--163, 2009.
+\newblock ISSN 08873585.
+\newblock \doi{10.1002/prot.22142}.
+
+\bibitem[Pettersen et~al.(2004)Pettersen, Goddard, Huang, Couch, Greenblatt,
+  Meng, and Ferrin]{Pettersen2004}
+Pettersen, Eric~F.; Goddard, Thomas~D.; Huang, Conrad~C.; Couch, Gregory~S.;
+  Greenblatt, Daniel~M.; Meng, Elaine~C., and Ferrin, Thomas~E.
+\newblock {UCSF Chimera - A visualization system for exploratory research and
+  analysis}.
+\newblock \emph{Journal of Computational Chemistry}, 25:\penalty0 1605--1612,
+  2004.
+\newblock ISSN 01928651.
+\newblock \doi{10.1002/jcc.20084}.
+
+\bibitem[Rajamani et~al.(2004)Rajamani, Thiel, Vajda, and
+  Camacho]{Rajamani2004}
+Rajamani, Deepa; Thiel, Spencer; Vajda, Sandor, and Camacho, Carlos~J.
+\newblock {Anchor residues in protein-protein interactions.}
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 101\penalty0 (31):\penalty0 11287--11292, 2004.
+\newblock ISSN 0027-8424.
+\newblock \doi{10.1073/pnas.0401942101}.
+
+\bibitem[Ross and Subramanian(1981)]{Ross1981}
+Ross, P~D and Subramanian, S.
+\newblock {Thermodynamics of protein association reactions: forces contributing
+  to stability.}
+\newblock \emph{Biochemistry}, 20:\penalty0 3096--3102, 1981.
+\newblock ISSN 0006-2960.
+\newblock \doi{10.1021/bi00514a017}.
+
+\bibitem[Sali and Blundell(1993)]{Sali1993}
+Sali, A and Blundell, T~L.
+\newblock {Comparative protein modelling by satisfaction of spatial
+  restraints.}
+\newblock \emph{Journal of molecular biology}, 234:\penalty0 779--815, 1993.
+\newblock ISSN 0022-2836.
+\newblock \doi{10.1006/jmbi.1993.1626}.
+
+\bibitem[Sardon et~al.(2010)Sardon, Pache, Stein, Molina, Vernos, and
+  Aloy]{Sardon2010}
+Sardon, Teresa; Pache, Roland~a; Stein, Amelie; Molina, Henrik; Vernos,
+  Isabelle, and Aloy, Patrick.
+\newblock {Uncovering new substrates for Aurora A kinase.}
+\newblock \emph{EMBO reports}, 11\penalty0 (12):\penalty0 977--984, 2010.
+\newblock ISSN 1469-221X.
+\newblock \doi{10.1038/embor.2010.171}.
+\newblock URL \url{http://dx.doi.org/10.1038/embor.2010.171}.
+
+\bibitem[Selzer and Schreiber(2001)]{Selzer2001}
+Selzer, Tzvia and Schreiber, Gideon.
+\newblock {New Insights into the Mechanism of Protein – Protein Association}.
+\newblock \emph{Change}, 198\penalty0 (May):\penalty0 190 --198, 2001.
+\newblock ISSN 0887-3585.
+\newblock \doi{10.1002/2001}.
+\newblock URL \url{http://onlinelibrary.wiley.com/doi/10.1002/prot.1139/full}.
+
+\bibitem[Sheinerman et~al.(2000)Sheinerman, Norel, and Honig]{Sheinerman2000}
+Sheinerman, Felix~B.; Norel, Raquel, and Honig, Barry.
+\newblock {Electrostatic aspects of protein-protein interactions}.
+\newblock \emph{Current Opinion in Structural Biology}, 10:\penalty0 153--159,
+  2000.
+\newblock ISSN 0959440X.
+\newblock \doi{10.1016/S0959-440X(00)00065-8}.
+
+\bibitem[Sippl(1990)]{Sippl1990}
+Sippl, M~J.
+\newblock {Calculation of conformational ensembles from potentials of mean
+  force. An approach to the knowledge-based prediction of local structures in
+  globular proteins.}, 1990.
+\newblock ISSN 0022-2836.
+
+\bibitem[Sippl(1993)]{Sippl1993}
+Sippl, M~J.
+\newblock {Boltzmann's principle, knowledge-based mean fields and protein
+  folding. An approach to the computational determination of protein
+  structures.}
+\newblock \emph{Journal of computer-aided molecular design}, 7:\penalty0
+  473--501, 1993.
+\newblock ISSN 0920-654X.
+\newblock \doi{10.1007/BF02337562}.
+
+\bibitem[Swets et~al.(2000)Swets, Dawes, and Monahan]{Swets2000}
+Swets, J~a; Dawes, R~M, and Monahan, J.
+\newblock {Better decisions through science.}
+\newblock \emph{Scientific American}, 283:\penalty0 82--87, 2000.
+\newblock ISSN 0036-8733.
+\newblock \doi{10.1038/scientificamerican1000-82}.
+
+\bibitem[Tanaka and Scheraga(1976)]{Tanaka1976}
+Tanaka, S and Scheraga, H~a.
+\newblock {Medium- and long-range interaction parameters between amino acids
+  for predicting three-dimensional structures of proteins.}
+\newblock \emph{Macromolecules}, 9\penalty0 (6):\penalty0 945--50, 1976.
+\newblock ISSN 0024-9297.
+\newblock \doi{10.1021/ma60054a013}.
+\newblock URL \url{http://www.ncbi.nlm.nih.gov/pubmed/1004017}.
+
+\bibitem[Wang and Dunbrack(2005)]{Wang2005}
+Wang, Guoli and Dunbrack, Roland~L.
+\newblock {PISCES: Recent improvements to a PDB sequence culling server}.
+\newblock \emph{Nucleic Acids Research}, 33\penalty0 (10):\penalty0 94--98,
+  2005.
+\newblock ISSN 03051048.
+\newblock \doi{10.1093/nar/gki402}.
+
+\bibitem[Wong et~al.(2003)Wong, Ionescu, and Ingles]{Wong2003}
+Wong, Johnson M~S; Ionescu, Daniela, and Ingles, C~James.
+\newblock {Interaction between BRCA2 and replication protein A is compromised
+  by a cancer-predisposing mutation in BRCA2.}
+\newblock \emph{Oncogene}, 22:\penalty0 28--33, 2003.
+\newblock ISSN 09509232.
+\newblock \doi{10.1038/sj.onc.1206071}.
+
+\bibitem[Xu et~al.(1997)Xu, Tsai, and Nussinov]{Xu1997}
+Xu, D; Tsai, C~J, and Nussinov, R.
+\newblock {Hydrogen bonds and salt bridges across protein-protein interfaces.}
+\newblock \emph{Protein engineering}, 10\penalty0 (9):\penalty0 999--1012,
+  1997.
+\newblock ISSN 0269-2139.
+\newblock \doi{10.1093/protein/10.9.999}.
+
+\bibitem[Xu et~al.(2010)Xu, Xu, and Liang]{xu2010computational}
+Xu, Y.; Xu, D., and Liang, J.
+\newblock \emph{Computational Methods for Protein Structure Prediction and
+  Modeling: Volume 2: Structure Prediction}.
+\newblock Biological and Medical Physics, Biomedical Engineering. Springer,
+  2010.
+\newblock ISBN 9780387688251.
+\newblock URL \url{https://books.google.co.in/books?id=nVyitwIJ4QwC}.
+
+\bibitem[Yasuda et~al.(2005)Yasuda, Morokawa, Wong, Rossi, Madhusudhan,
+  \v{S}ali, Askew, Adachi, Silverman, Krilis, and Stevens]{Yasuda2005}
+Yasuda, Shinsuke; Morokawa, Nasa; Wong, G.~William; Rossi, Andrea; Madhusudhan,
+  Mallur~S.; \v{S}ali, Andrej; Askew, Yuko~S.; Adachi, Roberto; Silverman,
+  Gary~a.; Krilis, Steven~a., and Stevens, Richard~L.
+\newblock {Urokinase-type plasminogen activator is a preferred substrate of the
+  human epithelium serine protease tryptase $\epsilon$/PRSS22}.
+\newblock \emph{Blood}, 105\penalty0 (10):\penalty0 3893--3901, 2005.
+\newblock ISSN 00064971.
+\newblock \doi{10.1182/blood-2003-10-3501}.
+
+\bibitem[Zhang et~al.(2012)Zhang, Petrey, Deng, Qiang, Shi, Thu, Bisikirska,
+  Lefebvre, Accili, Hunter, Maniatis, Califano, and Honig]{Zhang2012}
+Zhang, Qiangfeng~Cliff; Petrey, Donald; Deng, Lei; Qiang, Li; Shi, Yu; Thu,
+  Chan~Aye; Bisikirska, Brygida; Lefebvre, Celine; Accili, Domenico; Hunter,
+  Tony; Maniatis, Tom; Califano, Andrea, and Honig, Barry.
+\newblock {Structure-based prediction of protein–protein interactions on a
+  genome-wide scale}.
+\newblock \emph{Nature}, 490:\penalty0 556--560, 2012.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/nature11503}.
+\newblock URL \url{http://dx.doi.org/10.1038/nature11503}.
+
+\end{thebibliography}

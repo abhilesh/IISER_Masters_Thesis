@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Protein Interface}}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Demonstrative ROC curves}}{9}{figure.caption.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic representation of a 5-body clique}}{14}{figure.caption.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces BSA Distributions for training and testing sets}}{19}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {The BSA distribution for the training set}}}{19}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The BSA distribution for the testing set}}}{19}{subfigure.1.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces ROC curves for the pairwise potentials}}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Pairwise potential performance based on interacting atom types}}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Pairwise potential performance based on distance threshold}}{22}{figure.caption.10}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Log odds ratio matrix of Residue Pair preferences in pairwise potential}}{23}{figure.caption.11}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparison between MODTIE and our potentials}}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces ROC curves for multi-body potentials}}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces The RalGDS-Ral complex}}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Hotspot residues in RGL1-Ral}}{26}{figure.caption.15}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

@@ -1,0 +1,84 @@
+% -------------------------------------------------------------------------------------------------
+% ------------------------------------------ DISCUSSIONS --------------------------------------------
+% -------------------------------------------------------------------------------------------------
+\chapter{Discussions}
+\label{discussions}
+
+\pagestyle{fancy}
+
+\fancypagestyle{plain}{
+\fancyhf{} 
+\fancyfoot[RO, LE]{\thepage} 
+\renewcommand{\headrulewidth}{0pt}}
+
+\fancyhf{}
+\fancyhead[RO, LE]{Discussions}
+\fancyfoot[RO,LE]{\thepage}
+
+\section{Statistical Potentials}
+Due to the labor-intensive and expensive nature of the experimental methods for validation of protein-protein associations, computational methods for the prediction of protein-protein interactions have become quite popular. Between the two different types of computational methods for the prediction of protein associations, namely the physics-based methods and the knowledge-based statistical methods, we have used the latter to develop a way to determine protein binding. We chose statistical potentials because they are algorithmically and computationally much more feasible than the physics-based model. Another limitation of the physics-based models is their heavy dependence on the accuracy of the structure of the protein. A small discrepancy in the atomic coordinates will lead to a significant deviation in the estimation of the energies, when computed using the physics-based models. Statistical potentials are robust enough that such minor discrepancies do not affect the estimates of potentials by a significant amount.
+\par
+Statistical potentials help us portray a picture of how interactions between proteins are mediated and can be used as stand-ins for binding free energies. They work on the principle that the most frequently observed amino acid residue pairs are energetically more preferred than the pairs less frequently observed. However, because statistical potentials do not discriminate between interaction types and their strengths (for eg, the strength of a hydrogen bond vs that of a van der Waal's interaction), the statistical potential scores do not correlate perfectly with the binding affinities. To build a statistical potential for predicting binding affinities, known structures will have to be subsetted according to their binding affinities and then statistical potentials built for each subset of the dataset. However, the dearth of data on experimental binding affinities prevents the construction of a meaningful statistical potential. Based on observations made on an experimental dataset, statistical potentials allow us to derive approximate functions which can be used to predict the energy of an unknown system. 
+% Why did we use statistical potentials
+% Comparison with other computational methods
+
+\section{Pairwise Potentials}
+%subheading here
+We tested 96 different pairwise statistical potentials for their ability to predict protein-protein interactions. In both the methods for benchmarking the performance of the potentials, the side chain-side chain potentials were significantly much better than the other potentials. The performance of the other potentials based on the type of interacting atoms follows the order: all atom > main chain-side chain > main chain-main chain. Since, protein associations require specific interactions between the atoms of the constituting amino acid residues, these specificities are provided by the properties of the different side chains. Consistent with this, the side chain-side chain potential has the best power for discriminating between native and non-native associations, whereas main chain-main chain (which lack any specificity) potentials are the worst performers.
+\par
+% Why didn't ipa perform well
+We constructed two statistical potentials using two different weighting schemes $cifa$ and $ipa$. Between the two different potential types $cifa$ and $ipa$, we observed that the $cifa$ performed better than the $ipa$ potential when all other parameters are kept constant. The difference between the two different weights is that while $cifa$ aims to capture the contribution of each residue to the interaction between two residues and then considers the contribution of just one residue towards the weighting, the $ipa$ potential weighs the different residue pairs based on the number of interatomic interaction pairs between two different residues.
+\par
+% Glycine pairs
+Since Glycines lack a side chain and are present abundantly on the interface, we need to incorporate them in the side chain-side chain potentials. Three different scenarios were tested in this regard. The potential values for the GLY interactions in the side chain-side chain potentials were derived using a semi-optimisation approach. Of the three different scenarios tried, the case which assumes the distribution of Glycines on the interface is random (the ratio of the observed frequency of GLY pairs and the expected frequency of the GLY pairs is 1) gave the best results. Since Glycine lacks a side chain, in our potential, we have considered that it does not discriminate between amino acid residues and interacts with any residue the same way.
+% also for 
+\par
+Cysteine-Cysteine pairs have the best scores for any residue pair. This observation previously reported by Glaser \citep{Glaser2001}, is expected since the sulphurs in Cysteine have been observed to form disulphide bonds which  may play an important role in the stability of protein complexes. Cysteine-Cysteine pairs along with Histidine-Histidine pairs are also found in metal coordination sites across the interface (eg. zinc finger domain). These may be the reasons why Cysteine-Cysteine and Histidine-Histidine residue pairs have high scores. Other residue pairs with favourable contact scores are the oppositely charged residues (for eg. Lysine and Arginine (with positively charged side chains) with Glutamate and Aspartate (with negatively charged side chains)). These residue pairs form salt bridges across the interface and help strengthen the interaction. Also, since the burial of charged amino acid residues is energetically unfavourable they are often observed to be paired with oppositely charged amino acids.
+\par
+The non-specific van der Waal's force is the major interaction force between the hydrophobic amino acids (Leucine, Isoleucine, Alanine, Valine, Proline, Methionine, Phenylalanine and Tryptophan). Given the non-specific nature of this interaction, the hydrophobic residues clump together showing no particular residue pair preferences. As seen in the contact potential matrix, any hydrophobic - hydrophobic residue pair gets a favourable score without showing any particular preferences, except in the case of Tryptophan-Tryptophan pairs which get a higher score than the other hydrophobic pairs.
+
+% The diagonal in the score_matrix
+ In the log odds ratio matrix for the pairwise potential, the self-interaction scores between residues are high scoring. This means that like charged residue pairs (eg. Arginine-Arginine pairs) which are expected to get unfavourable scores are assigned favourable scores. A significant proportion of the dimer structures solved are homodimers and our dataset is also comprised of mostly homodimers. Because of the symmetric nature of the homodimers, it is likely that similar residues come closer more often and hence, they have high favourable scores in our score matrices. However, such like charge interactions have been the focus of other studies \citep{Magalhaes1994, Pednekar2009} which find that such like charged pairs do occur in protein-protein interactions if the interaction between them is mediated through a water molecule \citep{Heyda2010}. Magalhaes et. al. \citep{Magalhaes1994} provides examples several where Arginine-Arginine pairs are found in close proximity. Since water molecules cannot be reliably captured in low resolution X-ray crystal structures and also since information about the presence of water in the protein structures in our training set is missing, we cannot explore this possibility. An alternative hypothesis behind this observation might be that at the 4 \AA \; level, there might be significant main chain-main chain interactions which might contribute to the favourable scores for the diagonal elements. Further investigation is needed to pin down the reason behind this observation.
+
+\subsection{Testing the performance of pairwise potentials}
+% Complementarity 
+Benchmarking by rank ordering is one of the most robust ways to test the performance of a potential as it imposes the stringent constraint that the native conformation must have the lowest score when compared with 1000 non-native confirmation scores. The results from this benchmark echo the ones observed using the ROC analysis. When this test was applied to compare the performance of a union of best performing potentials versus the performance of any one of these potentials, it was observed that the union of potentials performed better than the best performing potential. This seems to suggest that different potentials are more efficient at discriminating certain types of protein complexes than the other potentials. As an example, a protein from \textit{Enterococcus faecalis} (PDB Code: 3NAT) was ranked 462 out of 1000 when a side chain-side chain potential was used. However, when a main chain-main chain potential was used on the same protein, it was ranked 1. This suggests that, in this protein, main chain-main chain interactions are more important at the interface than side chain-side chain interactions and hence, a main chain-main chain potential gave us better predictions.
+\par
+
+% What is the difference between MODTIE potential and our potential
+\par
+% Why is there a need for better potentials
+Since, pairwise potentials interpret protein-protein interfaces in terms of isolated residue pair interactions, these potentials ignore the structural context of an amino acid residue in a protein. Often, the surrounding amino acid residues of a particular residue may be important for bringing that residue in a particular confirmation to facilitate the interaction with the other subunit. 
+% rewrite this
+This absence of contextual awareness might explain why these pairwise potentials do not predict protein complex formation perfectly. 
+
+\section{Multibody Potentials}
+\par
+% How are these any better than the pairwise potentials
+Statistical Potentials built using extended stretches of amino acid residues would solve the problem mentioned in the previous section. By taking into account the structural neighbourhood of an amino acid residue during the construction of the potential, we look for clusters of residues. Following the same assumption as in the pairwise potential, that the most frequently observed clusters of amino acid residues correspond to the energetically favourable states, attempts were made at constructing 5-body statistical potentials.
+% Why did they fail 
+\par
+The structural definition of a multi-body clique across a protein interface is more complicated than the simplistic definition used for defining interactions in the pairwise potential case. Two different distance thresholds are now required for the definition, an intra-domain interaction distance and an inter-domain interaction distance. The most optimal values for these parameters are not easy to determine, a smaller, stringent distance threshold will take into account the strongest interactions but we may not sample enough distinct cliques, which would affect the performance of the potential. However, setting a liberal distance threshold, we may be able to get a larger number of multi-body cliques but only at the expense of picking up some false interactions. The problem of weighing the different interactions suffers in a similar way (the definition used in the pairwise case - any atom of residue $A$ lies within any atom of residue $B$; gives rise to a lot of false interactions when looking at cliques). Our results demonstrate that an appropriate weighting scheme can improve the prediction results significantly (Fig \ref{ROC_mb}) .  All these problems need substantial sampling to gauge the best definitions for a multi-body cliques. These refinements are being incorporated in the next iterations of multi-body potentials.
+% talk about different definitions here.
+
+\section{Validation on the RalGEF-Ral system}
+The RalGEF-Ral system is an important signalling pathway involved in oncogenesis. The ability of Ral to bind to six different variants of RalGEFs (RalGDS, RalGPS1, RalGPS2, RGL1, RGL2, RGL3) was tested using our pairwise statistical potentials. All six variants of RalGEFs were predicted to bind to Ral. Four of these variants (RGL1, RGL2, RGL3, RalGDS) are found to bind Ral experimentally, whereas the other two variants might be weakly interacting. Since the statistical potentials make predictions on binding events of two proteins, we suspect that if all the different GEFs are put in a $in \; vitro$ setting, they will bind to Ral. However, in a cellular context, the bindings may not be strong, with proteins out-competing each other. Also, as statistical potentials are based on average properties of residue-residue interactions, they do not correlate well with binding affinities and hence fail to determine the RalGEF variants which bind Ral more strongly than the other variants.
+
+\par 
+We predicted some hotspot residues which upon mutations to other residues will weaken the interactions between RGL1-Ral complex. These hotspots residues sit in complementary clusters and hence the mutation of these residues to residues which disrupt the interaction (oppositely charged residues in case of polar residues) will lead to unfavourable interactions that would destabilise the complex. This observation shows that  along with complex level prediction of protein-protein binding, our statistical potential can also help predict important interactions at the residue level.
+
+\section{Applications}
+\par
+Apart from predicting whether two protein subunits would form a stable association or not, these potentials can be applied to a variety of problems such as the prediction of binding hot spot residues, protein design etc.
+% Identification of Binding hotspot residues
+\par
+Experimental alanine scanning is one of the best methods to determine the contribution of individual residues to the stabilisation of a protein-protein interface. However, this method is very labor-intensive as it involves systematically mutating all the residues in a protein to alanine and measuring the effect of the mutation on the binding of the complex. Statistical potentials such as the one presented in this thesis can be used as an alternative method to predict hot spot residues across protein interfaces. $In \; silico$ mutagenesis experiments are conducted on the protein of interest and then physical models of the protein are built. The resulting models are then scored using the statistical potential and the scores compared with the native model. Binding Hot Spot residues are then defined as those residues that lead to a large destabilisation in the final score of the protein.
+\par
+% Protein Design
+These potentials can also aid in protein design processes. Given a protein structure, a favourable, complementary surface can be designed and optimised using these potentials which would ensure binding. Starting with a generic protein surface, residues on this surface can be tweaked to ensure complementarity with the target protein of interest. This method can also be employed to design novel antibodies.
+\par
+The pairwise statistical potentials prediction system will be bundled in a web server in the near future, so that researchers can submit their protein complexes and make use of this facility. An ultimate test for the multibody potentials would be to test it on the solutions submitted by computational biologists for the target structures in CAPRI (Critical Assessment of PRediction of Interactions) \citep{Janin2002}. CAPRI is a community-wide, blind test experiment which tests the ability of protein-protein docking algorithms to predict modes of association between two proteins based on their three-dimensional structures.
+
+% -------------------------------------------------------------------------------------------------
+% ------------------------------------------ DISCUSSIONS --------------------------------------------
+% -------------------------------------------------------------------------------------------------
